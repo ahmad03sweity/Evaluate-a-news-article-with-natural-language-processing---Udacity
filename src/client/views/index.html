@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-webpack</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Form to submit the article URL for analysis -->
+        <form id="myForm" method="post" onsubmit="return Client.handleSubmit(event)">
+            <label for="URI">Enter an Article URL:</label>
+            <input type="text" id="URI" name="URI" />
+            <button type="submit" value="Analyze">Analyze</button>
+        </form>
+    </div>
+
+    <!-- Error message container -->
+    <div id="error" style="display: none;"></div>
+
+    <!-- Results container -->
+    <div id="results">
+        <h2>Results:</h2>
+        <div id="loader" style="display: none;"></div>
+
+        <!-- List to display analysis results -->
+        <ul id="resultsList">
+            <li id="agreement"></li>
+            <li id="subjectivity"></li>
+            <li id="confidence"></li>
+            <li id="irony"></li>
+            <li id="score_tag"></li>
+        </ul>
+    </div>
+</body>
+
+</html>
